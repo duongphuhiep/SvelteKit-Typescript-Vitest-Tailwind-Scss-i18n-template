@@ -20,11 +20,11 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your new<br /><span class="font-bold text-red-600">SvelteKit</span> app
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+		try editing <strong class="font-mono">src/routes/index.svelte</strong>
 	</h2>
 
 	<Counter />
