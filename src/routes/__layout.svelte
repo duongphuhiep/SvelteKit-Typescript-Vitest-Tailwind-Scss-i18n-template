@@ -3,7 +3,6 @@
     register,
     init,
     getLocaleFromNavigator,
-    isLoading,
   } from "svelte-i18n";
 
   register("en", () => import("../locales/en.json"));
@@ -28,22 +27,19 @@
   import { _ } from "svelte-i18n";
 </script>
 
-{#if $isLoading}
-  Loading language, please wait..
-{:else}
-  <Header />
 
-  <main>
-    <slot />
-  </main>
+<Header />
 
-  <footer>
-    <p>
-      {$_("home")} visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn
-      SvelteKit
-    </p>
-  </footer>
-{/if}
+<main>
+  <slot />
+</main>
+
+<footer>
+  <p>
+    {$_("home")} visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn
+    SvelteKit
+  </p>
+</footer>
 
 <style>
   main {
