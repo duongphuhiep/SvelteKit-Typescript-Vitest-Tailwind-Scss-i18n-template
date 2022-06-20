@@ -1,0 +1,4 @@
+{
+  "i18n-ally.localesPaths": ["src/locals"],
+  "scss.lint.unknownAtRules": "ignore"
+}
